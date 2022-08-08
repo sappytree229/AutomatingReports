@@ -1,5 +1,5 @@
-$finalList = Import-Csv -Path '.\AllTeammatesCiscoTeamsPhoneNumber.csv'
-$duplicateList = Import-Csv -Path '.\TeammatesWithBothNumbers.csv'
+$finalList = Import-Csv -Path 'FileName.csv'
+$duplicateList = Import-Csv -Path 'FileName2.csv'
 
 $newCSV = @()
 
