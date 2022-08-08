@@ -1,5 +1,5 @@
-$OriginalFile = '.\Calabrio Clean Up.xlsx'
-$EditedFile   = '.\Calabrio Clean Up- Finished.xlsx'
+$OriginalFile = FirstFileName
+$EditedFile   = FinalFileName
 
 $Comparison = Compare-Worksheet `
         -Referencefile $OriginalFile `
