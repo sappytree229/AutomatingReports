@@ -1,5 +1,5 @@
-$SAMList = Import-Csv -Path '.\ContactCenterAgentSAM.csv'
-$EmailList = Import-Csv -Path '.\ContactCenterAgentEmail.csv'
+$SAMList = Import-Csv -Path '.\FileName.csv'
+$EmailList = Import-Csv -Path '.\FileName.csv'
 $ADList = Import-Csv -Path '.\ADQuery.csv'
 
 $SAMArray = @()
@@ -73,5 +73,5 @@ foreach ($item in $EmailList) {
     }
 }
 
-$SAMArray | Export-Csv -Path '.\ActiveAndInactiveUsersWithNames.csv'
-$EmailArray | Export-Csv -Path '.\ActiveAndInactiveUsersWithNames.csv' -Append
+$SAMArray | Export-Csv -Path '.\ActiveAndInactiveUsers.csv'
+$EmailArray | Export-Csv -Path '.\ActiveAndInactiveUsers.csv' -Append
